@@ -27,9 +27,6 @@ class Axonhub < Formula
   def install
     libexec.install "axonhub"
     (etc/"axonhub").mkpath
-    target = etc/"axonhub/config.yml"
-    source = buildpath/"config.example.yml"
-    target.write source.read unless target.exist?
 
     (bin/"axonhub").write <<~SH
       #!/bin/sh
