@@ -1,26 +1,26 @@
 class Axonhub < Formula
   desc "All-in-one AI development platform. Use any SDK, access any model"
   homepage "https://github.com/looplj/axonhub"
-  version "0.9.17"
+  version "0.9.18"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/looplj/axonhub/releases/download/v0.9.17/axonhub_0.9.17_darwin_arm64.zip"
-      sha256 "1035425a790ed03f589dc42e85011d6a30a19f4129abdf3ad054083d854499c0"
+      url "https://github.com/looplj/axonhub/releases/download/v0.9.18/axonhub_0.9.18_darwin_arm64.zip"
+      sha256 "ad2b866220c4617ee248bc98c422ac2f1ee4df2c7d2848062cc8cf174ec5ad46"
     else
-      url "https://github.com/looplj/axonhub/releases/download/v0.9.17/axonhub_0.9.17_darwin_amd64.zip"
-      sha256 "b074573f1a24ec4fea8fe747626c7b44fa8712a5fdecda5afb35c47266812a67"
+      url "https://github.com/looplj/axonhub/releases/download/v0.9.18/axonhub_0.9.18_darwin_amd64.zip"
+      sha256 "b3cb3fb75c35e7e7845b6332ff67fdd5cd9d4a0aef45d2dd099373183b0c2b67"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/looplj/axonhub/releases/download/v0.9.17/axonhub_0.9.17_linux_arm64.zip"
-      sha256 "70024febc236c96e220be9a836735e5b641af07bbdf6544b113896d6893e1ace"
+      url "https://github.com/looplj/axonhub/releases/download/v0.9.18/axonhub_0.9.18_linux_arm64.zip"
+      sha256 "b6975737572ed1a857c219107ae8c281e5565f9ea57eeb55e5cac27de3ab5084"
     else
-      url "https://github.com/looplj/axonhub/releases/download/v0.9.17/axonhub_0.9.17_linux_amd64.zip"
-      sha256 "7fabd8ed6dd8daf4dbea985152d10038351e5373539b8e0322435a750c4b2f6f"
+      url "https://github.com/looplj/axonhub/releases/download/v0.9.18/axonhub_0.9.18_linux_amd64.zip"
+      sha256 "e9071e6311d4a31094e543fd309914d68e1a0d2fcbe208cb4396ae046f042dd6"
     end
   end
 
