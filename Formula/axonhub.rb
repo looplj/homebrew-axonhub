@@ -1,5 +1,5 @@
 class Axonhub < Formula
-  desc "All-in-one AI development platform. Use any SDK, access any model."
+  desc "All-in-one AI development platform. Use any SDK, access any model"
   homepage "https://github.com/looplj/axonhub"
   version "0.9.17"
   license "Apache-2.0"
@@ -40,7 +40,16 @@ class Axonhub < Formula
     keep_alive true
   end
 
+  def caveats
+    <<~EOS
+      To start axonhub now and restart at login:
+        brew services start axonhub
+      Or, if you don't want/need a background service you can just run:
+        #{opt_bin}/axonhub
+    EOS
+  end
+
   test do
-    system "#{bin}/axonhub", "version"
+    system bin/"axonhub", "version"
   end
 end
