@@ -5,13 +5,13 @@
 class Axonhub < Formula
   desc "All-in-one AI development platform. Use any SDK, access any model."
   homepage "https://github.com/looplj/axonhub"
-  version "1.0.0-beta12"
+  version "1.0.0-rc1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-beta12/axonhub_1.0.0-beta12_darwin_amd64.zip"
-      sha256 "b012821c6fe4f4058deb08ff7de7df76565c833e5c12b9a5601391a71087371b"
+      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-rc1/axonhub_1.0.0-rc1_darwin_amd64.zip"
+      sha256 "3fca2b6d8675f6eede45192abdad564625c860e39ef6270a1fe1161142b7f9f1"
 
       define_method(:install) do
         libexec.install "axonhub"
@@ -24,8 +24,8 @@ class Axonhub < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-beta12/axonhub_1.0.0-beta12_darwin_arm64.zip"
-      sha256 "b0c4be0292135d03162288df2e5fe67ca3443da16ab156f8f6b3146fce0010d1"
+      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-rc1/axonhub_1.0.0-rc1_darwin_arm64.zip"
+      sha256 "041a0a63c8376301db49a8a920f018de0cacee07856891e212b241d457f41d2b"
 
       define_method(:install) do
         libexec.install "axonhub"
@@ -41,8 +41,8 @@ class Axonhub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-beta12/axonhub_1.0.0-beta12_linux_amd64.zip"
-      sha256 "c8fc15e61fb95314b7106a43d9d14cce314fefbbb7848b042892db94ac834d4a"
+      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-rc1/axonhub_1.0.0-rc1_linux_amd64.zip"
+      sha256 "c8a8310620576c1f4111966528ed43f772e3c1025f1501389417fb01fa89b855"
       define_method(:install) do
         libexec.install "axonhub"
         (etc/"axonhub").mkpath
@@ -54,8 +54,8 @@ class Axonhub < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-beta12/axonhub_1.0.0-beta12_linux_arm64.zip"
-      sha256 "8b21b387cb785d0c45fd4d153e711c6a80892d414e5f342101feb688aea589a4"
+      url "https://github.com/looplj/axonhub/releases/download/v1.0.0-rc1/axonhub_1.0.0-rc1_linux_arm64.zip"
+      sha256 "111995d79d9c7c4269f4ecc30262c7d2e690ccc10428b3e1e609b44a52fb9f23"
       define_method(:install) do
         libexec.install "axonhub"
         (etc/"axonhub").mkpath
